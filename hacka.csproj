@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC87B91E-28B3-4BB0-ADAD-20C787B41616}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hacka</RootNamespace>
+    <AssemblyName>hacka</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abcchallage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abcchallage.Designer.cs">
+      <DependentUpon>Abcchallage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="brav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brav.Designer.cs">
+      <DependentUpon>brav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2Color.Designer.cs">
+      <DependentUpon>Form2Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormColor.Designer.cs">
+      <DependentUpon>FormColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSoustraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSoustraction.Designer.cs">
+      <DependentUpon>FormSoustraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fruit.Designer.cs">
+      <DependentUpon>fruit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loste.Designer.cs">
+      <DependentUpon>Loste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="score.Designer.cs">
+      <DependentUpon>score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Abcchallage.resx">
+      <DependentUpon>Abcchallage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="brav.resx">
+      <DependentUpon>brav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2Color.resx">
+      <DependentUpon>Form2Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormColor.resx">
+      <DependentUpon>FormColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSoustraction.resx">
+      <DependentUpon>FormSoustraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loste.resx">
+      <DependentUpon>Loste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="score.resx">
+      <DependentUpon>score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fruit.resx">
+      <DependentUpon>fruit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trucks3-0a601750fbc648a38b3bd88fc3ea6287.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mignon-enfant-citrouille-icône-style-dessin-animé-de-mignonne-vecteur-pour-le-design-web-isolé-sur-fond-blanc-175725224.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d0beca7540521669a2693659e144389d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-cow-kid-illustration-pitripiter-simple-vector-animal-kids-picture-131585888.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\357-3578219_farm-livestock-cartoon-cow-cattle-free-clipart-hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ec5d17e6ea4d54ea95f7e44a005ef55d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0a2c7765f26750536e199749f19cedfd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isolated-soccer-ball-illustration-sports-football-icon-flat-illustration-free-vector %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plastic-numbers-123-11958434.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_54856293-stock-photo-123-building-blocks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_54856293-stock-photo-123-building-blocks1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf0cae8c-a8c8-4b2b-854d-7395b9cde151.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf0cae8c-a8c8-4b2b-854d-7395b9cde1511.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_58069019-stock-illustration-cartoon-addition-symbol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12476a26aec34a64522ed12ebd87e504.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isolated-soccer-ball-illustration-sports-football-icon-flat-illustration-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frontimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start bouton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start bouton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\couleurs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkgcolor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-smiley-emoticon-thumb-signal-smiling-faces-smiley-thumb-signal-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkgcolor1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1085446318-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-528415533-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_115892005_HMEE0k02qxE2PMgSoEuulFNokLEvP7kW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29751-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload icon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25851-4-next-button-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-forward-button-icon-png-image_6422363.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frontimage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trucks3-0a601750fbc648a38b3bd88fc3ea62871.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-smiley-emoticon-thumb-signal-smiling-faces-smiley-thumb-signal-thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-smiley-emoticon-thumb-signal-smiling-faces-smiley-thumb-signal-thumbnail2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkgcolor2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellooo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reedd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greennn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greennn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blu21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellooo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunnnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunnnn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunnnn22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunnnn221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verygood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25851-4-next-button-transparent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound-on-flat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verygood1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25851-4-next-button-transparent2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-850935974-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound-on-flat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1531788.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1133458949-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winwin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1432948246-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1432948246-170667a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bravo-banner-color-confetti-vector-illustration-91022451.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_115892005_HMEE0k02qxE2PMgSoEuulFNokLEvP7kW1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
